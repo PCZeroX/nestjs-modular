@@ -441,20 +441,4 @@ git push heroku master
 heroku logs --alll
 ```
 
-```JS
-
-```
-
-```JS
-
-```
-
-```JS
-
-```
-
-```JS
-
-```
-
 ---
