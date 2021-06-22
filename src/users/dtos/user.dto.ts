@@ -5,7 +5,7 @@ export class CreateUserDto {
   @IsString()
   @IsEmail()
   @ApiProperty({
-    description: 'the email of user'
+    description: 'the email of user',
   })
   readonly email: string;
 
@@ -18,4 +18,4 @@ export class CreateUserDto {
   readonly role: string;
 }
 
-export class UpdateUserDto extends PartialType(CreateUserDto) { }
+export class UpdateUserDto extends PartialType(CreateUserDto) {}

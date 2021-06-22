@@ -9,11 +9,10 @@ import { ProductsService } from './../../products/services/products.service';
 
 @Injectable()
 export class UsersService {
-
   constructor(
     private productsService: ProductsService,
     private configService: ConfigService,
-  ) { }
+  ) {}
 
   private counterId = 1;
   private users: User[] = [
@@ -26,10 +25,10 @@ export class UsersService {
   ];
 
   findAll() {
-    const apiKey = this.configService.get('API_KEY')
-    const db = this.configService.get('DATABASE_NAME')
-    console.log(apiKey)
-    console.log(db)
+    const apiKey = this.configService.get('API_KEY');
+    const db = this.configService.get('DATABASE_NAME');
+    console.log(apiKey);
+    console.log(db);
     return this.users;
   }
 
@@ -75,7 +74,7 @@ export class UsersService {
     return {
       date: new Date(),
       user,
-      products: this.productsService.findAll()
-    }
+      products: this.productsService.findAll(),
+    };
   }
 }

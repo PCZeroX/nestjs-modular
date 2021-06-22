@@ -441,4 +441,22 @@ git push heroku master
 heroku logs --alll
 ```
 
+Nos dirigimos a dashboard para ver los proyectos en nodejs.
+
+Después vamos a configuraciones o settings y agregamos las variables de configuración o Config Vars.
+
+Formateamos el código
+
+```JS
+yarn format
+```
+
+```JS
+
+```
+
+```JS
+
+```
+
 ---
